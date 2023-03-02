@@ -2,7 +2,7 @@
   "name": "squeezy-client",
   "version": "0.1.0",
   "engines": {
-    "npm": "8.19.2",
+    "npm": ">=8.x",
     "node": "16.18.0"
   },
   "private": true,
