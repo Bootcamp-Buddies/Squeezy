@@ -78,8 +78,13 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
+        <div className="detail-container">
           <Link to="/">← Back to Products</Link>
+
+          <img
+            src={`/images/${currentProduct.image}`}
+            alt={currentProduct.name}
+          />
 
           <h2>{currentProduct.name}</h2>
 
@@ -96,10 +101,7 @@ function Detail() {
             </button>
           </p>
 
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-          />
+          
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
