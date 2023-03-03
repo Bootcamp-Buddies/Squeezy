@@ -23,52 +23,48 @@ function Nav() {
       );
     } else {
       return (
-        <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/signup">Signup</Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" href="/login">Login</Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link" href="/story">Our Story</Link>
-              </li>
-            </ul>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+          <div class="container-fluid">
+            <Link className="navbar-brand" to="/">
+              <img
+                className="navbar-toggler-icon"
+                src="./icons/squeezy-logo.png"
+                alt="Squeezy Logo"
+              />
+              <span className="brand-name">Squeezy</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </Link>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <Link class="nav-link active" aria-current="page" to="/signup">Signup</Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link" href="/login">Login</Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link" href="/story">Our Story</Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
 
       );
     }
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link className="navbar-brand" to="/">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span><img
-              className="navbar-toggler-icon"
-              src="./icons/squeezy-logo.png"
-              alt="Squeezy Logo"
-            /></span>
-          </button>
-          Squeezy
-        </Link>
-
-
-      </h1>
-
-      <nav>
-        {showNavigation()}
-      </nav>
-    </header>
+    // <header>
+    <nav>
+      {showNavigation()}
+    </nav>
+    // </header>
   );
 }
 
