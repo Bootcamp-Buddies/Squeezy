@@ -69,6 +69,8 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+  text-align: justify;
+  margin: 0 3vw 0 3vw;
 }
 
 a {
@@ -112,11 +114,10 @@ button {
   display: flex;
   align-items: center;
   border-radius: 20px;
-  margin: 1vw;
-  /* padding: -1vw; */
+  /* margin: 1vw; */
 }
 
-.container{
+.container {
   margin: 1vw !important;
   margin-right: 1vw !important;
 }
@@ -169,9 +170,8 @@ input:focus {
 }
 
 .flex-row {
-  /* display: flex;
-  flex-wrap: wrap; */
-  display: -webkit-inline-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .space-between {
@@ -241,7 +241,8 @@ input:focus {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;;
+  z-index: 1;
+  ;
 }
 
 header {
@@ -259,6 +260,40 @@ header {
 .brand-name {
   padding: 1vw;
 }
+
+.detail-container {
+  text-align: center;
+}
+
+.welcome-text-1 {
+  position: absolute;
+  top: 25vw;
+  left: 5vw;
+  align-items: center;
+  display: flex;
+
+}
+
+.welcome-text-2 {
+  position: absolute;
+  top: 48vw;
+  left: 64vw;
+  align-items: center;
+
+}
+
+.welcome-text-div {
+  display: flex;
+}
+
+.hand-writing {
+  font-family: 'Allura', cursive;
+  padding-left: 1vw;
+  font-size: 6vw;
+  margin: 0;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .card {
