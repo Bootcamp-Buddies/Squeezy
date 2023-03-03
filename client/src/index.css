@@ -100,11 +100,31 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  color: white;
+  background-color: #212529d8;
+  border-radius: 20px !important;
+  margin: .3vw !important;
+  transition: .5s;
+}
+
+button:hover{
+  transition: .5s;
+  transform: scale(1.03);
+  background-color: #4b4949a7;
+}
+
+button:disabled{
+  background-color: #21252978;
+}
+
+button:disabled:hover{
+  transform: scale(1.0);
+
+}
+
+.add-cart-button {
   position: absolute;
   bottom: 2vw;
-  border-radius: 20px !important;
-
 }
 
 .card {
@@ -236,13 +256,12 @@ input:focus {
 }
 
 .navbar {
-  padding: 1%;
+  /* padding: 1%; */
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-  ;
 }
 
 header {
@@ -255,10 +274,13 @@ header {
 
 .navbar-brand {
   text-decoration: none !important;
+  padding-top: 0 !important;
+  padding-bottom: 1vh !important;
 }
 
-.brand-name {
-  padding: 1vw;
+.brand-logo{
+  width: 140px;
+  height: 58px;
 }
 
 .detail-container {
@@ -293,7 +315,19 @@ header {
   margin: 0;
 }
 
+body {
+  background-color: #333;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 35px;
+}
 
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #FF9800;
+}
 
 @media screen and (max-width: 768px) {
   .card {

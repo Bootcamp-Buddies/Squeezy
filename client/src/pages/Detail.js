@@ -101,7 +101,7 @@ function Detail() {
             </button>
           </p>
 
-          
+
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
