@@ -20,6 +20,11 @@ import OrderHistory from './pages/OrderHistory';
 import { Provider } from 'react-redux';
 import store from '../src/utils/store';
 
+import 'bootstrap/dist/css/bootstrap.css';
+import '../src/index.css';
+
+import background from "../src/assets/squeezy-background.png";
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -44,8 +49,15 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-        <Provider store={store}>
+          <Provider store={store}>
             <Nav />
+            <div style={{
+              backgroundImage: `url(${background})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              height: '100vh'
+            }}>
+            </div>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />

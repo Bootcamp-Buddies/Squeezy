@@ -51,6 +51,15 @@ db.once('open', async () => {
       quantity: 1000
     },
     {
+      name: 'Blood Orange',
+      description:
+        'Blood orange has quite the fitting moniker considering its flesh is a very distinctive dark red. This is because it contains unique antioxidants called anthocyanins that are not found in any other citrus fruits. Another feature that sets it apart from its other citrus counterparts is that it has a distinct raspberry flavor to it in combination with the usual citric flavor.',
+      image: 'blood-orange.png',
+      category: categories[5]._id,
+      price: 3.99,
+      quantity: 1200
+    },
+    {
       name: 'Finger Lime',
       description:
         'The finger lime, as the name suggests, looks like an elongated lime. Its juicy vesicles are used as garnish in various dishes and are referred to as lime caviar. Finger lime has a tangy flavor that makes it perfect for making pickles and marmalade. But that is not all! Its peel is also dried and used as a spice.',
@@ -103,15 +112,6 @@ db.once('open', async () => {
       category: categories[3]._id,
       price: 5.99,
       quantity: 750
-    },
-    {
-      name: 'Blood Orange',
-      description:
-        'Blood orange has quite the fitting moniker considering its flesh is a very distinctive dark red. This is because it contains unique antioxidants called anthocyanins that are not found in any other citrus fruits. Another feature that sets it apart from its other citrus counterparts is that it has a distinct raspberry flavor to it in combination with the usual citric flavor.',
-      image: 'blood-orange.png',
-      category: categories[5]._id,
-      price: 3.99,
-      quantity: 1200
     },
     {
       name: 'Tangerine',
