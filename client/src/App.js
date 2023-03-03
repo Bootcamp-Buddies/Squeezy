@@ -20,8 +20,8 @@ import OrderHistory from './pages/OrderHistory';
 import { Provider } from 'react-redux';
 import store from '../src/utils/store';
 
-import 'bootstrap/dist/css/bootstrap.css';
 import '../src/index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import background from "../src/assets/squeezy-background.png";
 
@@ -55,6 +55,7 @@ function App() {
               backgroundImage: `url(${background})`,
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
+              position: '',
               height: '100vh'
             }}>
             </div>
