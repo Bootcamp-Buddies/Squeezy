@@ -79,19 +79,19 @@ function Detail() {
     <>
       {currentProduct && cart ? (
         <div className="detail-container">
-          <Link to="/">← Back to Products</Link>
+          <Link className='back-button btn' to="/">← Back to Products</Link>
 
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
           />
 
-          <h2>{currentProduct.name}</h2>
+          <h2 className='detail-product-name'>{currentProduct.name}</h2>
 
-          <p>{currentProduct.description}</p>
+          <p className='detail-description'>{currentProduct.description}</p>
 
           <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
+            <strong>Price: </strong>${currentProduct.price}/lb{' '}
             <button onClick={addToCart}>Add to Cart</button>
             <button
               disabled={!cart.find((p) => p._id === currentProduct._id)}

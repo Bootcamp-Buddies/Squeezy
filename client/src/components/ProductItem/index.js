@@ -39,19 +39,31 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
+    <div className="card card-container">
+      <h2 className="card-header">{name}</h2>
+
       <Link to={`/products/${_id}`}>
         <img
+          className="card-image"
           alt={name}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
-      </Link>
-      <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <span>${price}</span>
+        {/* <h3 className="title">{name}</h3> */}
+        <div className="card-text">
+          {/* <span>{name}</span> */}
+        </div>
+
+        <div class="overlay">
+        </div>
+        {/* <button className="add-cart-button" onClick={addToCart}></button> */}
+        <div className="overlay-container">
+        <p className="stock">{quantity} {pluralize("item", quantity)} in stock</p>
+        <p className="price">${price}/lb</p>
+        <button onClick={addToCart}>Add to Cart</button>
       </div>
-      <button className="add-cart-button" onClick={addToCart}>Add to cart</button>
+      </Link>
+
+      
     </div>
   );
 }
