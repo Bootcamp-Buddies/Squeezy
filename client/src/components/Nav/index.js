@@ -27,11 +27,11 @@ function Nav() {
           <div class="container-fluid">
             <Link className="navbar-brand" to="/">
               <img
-                className="navbar-toggler-icon"
-                src="./icons/squeezy-logo.png"
+                className="brand-logo"
+                src="./icons/squeezy-logo-white.png"
                 alt="Squeezy Logo"
               />
-              <span className="brand-name">Squeezy</span>
+              {/* <span className="brand-name">Squeezy</span> */}
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>

@@ -60,10 +60,10 @@ function App() {
             }}>
             </div>
 
-            <div className='welcome-text-div'>
+            {/* <div className='welcome-text-div'>
               <h1 className='welcome-text-1' >Easy peasy, lemon <h1 class='hand-writing'>Squeezy!</h1></h1>
               <h5 className='welcome-text-2'>Citrus got real, so real!</h5>
-            </div>
+            </div> */}
 
             <Switch>
               <Route exact path="/" component={Home} />
