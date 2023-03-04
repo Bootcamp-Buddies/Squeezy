@@ -13,82 +13,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html,
-body {
-  min-height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Karla', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 16px;
-  color: var(--dark);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-  margin: 5px 0;
-  line-height: 1.25;
-}
-
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-top: 0;
-  text-align: justify;
-  margin: 0 3vw 0 3vw;
-}
-
-a {
-  color: var(--tertiary);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-header {
-  background: var(--primary);
-}
-
-header a {
-  color: var(--light);
+  font-family: 'Kanit', sans-serif !important;
+  letter-spacing: .07vw;
 }
 
 button {
@@ -162,6 +88,7 @@ button:disabled:hover {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 img {
@@ -259,6 +186,8 @@ header {
 
 .detail-container {
   text-align: center;
+  position: relative;
+  margin: 2vw 0 2vw 0;
 }
 
 .welcome-text-1 {
@@ -309,7 +238,7 @@ text {
   margin-top: 50px;
   width: 500px;
   height: 300px;
-
+  transition: .5s;
 }
 
 .overlay {
@@ -369,7 +298,7 @@ text {
 }
 
 .card-header {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive !important;
   background-color: white !important;
   border-bottom: black 1px solid !important;
   margin-bottom: 1vh !important;
@@ -405,9 +334,65 @@ text {
   opacity: 1;
 }
 
-.card{
+.card {
   border: black 1px solid !important;
 }
+
+.category-div {
+  margin: 1vw 0 2vw 0;
+}
+
+.cart {
+  position: absolute;
+  top: 5vw !important;
+  left: 20vw;
+}
+
+.back-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1vw 1vw 1vw 2vw;
+  transition: .5s !important;
+  width: 22vw;
+  padding-left: 0 !important;
+}
+
+.back-button:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
+  transition: .5s !important;
+}
+
+.detail-description {
+  margin: 2vw 5vw 2vw 5vw;
+}
+
+.detail-product-name{
+  /* font-family: 'Dancing Script', cursive !important; */
+}
+
+/* Sign Up Page */
+.gradient-custom-3 {
+  /* fallback for old browsers */
+  background: #84fab0;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+  }
+  .gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #84fab0;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+  }
+
 
 /* Media Screen */
 @media screen and (max-width: 768px) {
