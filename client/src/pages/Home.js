@@ -2,13 +2,27 @@ import React from "react";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
+import background from "../assets/squeezy-background.png";
+import Nav from '../components/Nav/index.js';
+
 
 const Home = () => {
   return (
     <div className="container">
-      <CategoryMenu />
-      <ProductList />
-      <Cart />
+      <Nav/>
+      <div style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        position: '',
+        height: '100vh'
+      }}>
+      </div>
+      <div className="container-products">
+        <CategoryMenu />
+        <ProductList />
+        <Cart />
+      </div>
     </div>
   );
 };

@@ -21,15 +21,13 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
+  border: white 2px solid;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
   color: white;
   background-color: #212529d8;
   border-radius: 20px !important;
-  margin: .3vw !important;
+  margin: .5vw !important;
   transition: .5s;
 }
 
@@ -81,11 +79,21 @@ button:disabled:hover {
   margin: 1vw;
 }
 
-.container {
-  /* margin: 1vw !important; */
+/* .container {
   margin-right: 1vw !important;
   width: 85%;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+} */
+
+.container {
+  /* margin-right: 1vw !important; */
+  max-width: 100% !important;
+  /* max-width: 1200px; */
+  padding: 0 !important;
+  margin: 0 !important;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -112,10 +120,6 @@ img {
 
 span[role="img"] {
   cursor: default;
-}
-
-form {
-  width: 40%;
 }
 
 input {
@@ -367,32 +371,60 @@ text {
   margin: 2vw 5vw 2vw 5vw;
 }
 
-.detail-product-name{
+.detail-product-name {
   /* font-family: 'Dancing Script', cursive !important; */
 }
 
-/* Sign Up Page */
-.gradient-custom-3 {
-  /* fallback for old browsers */
-  background: #84fab0;
-  
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-  
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
-  }
-  .gradient-custom-4 {
-  /* fallback for old browsers */
-  background: #84fab0;
-  
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-  
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-  }
+.container-products {
+  margin: 3vw !important;
+}
 
+.form-container {
+  position: absolute;
+  top: 14vw;
+  left: 46vw;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white;
+  border-radius: 40px;
+  padding: 2vw;
+  width: 30vw;
+  border: white 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  width: 90%;
+  text-align: center;
+}
+
+input {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.form-logo {
+  position: absolute;
+  top: 1.5vw;
+  left: 53.5vw;
+  width: 15%;
+  height: 22%;
+}
+
+.submit-button{
+  text-align: center;
+}
+
+.back-button-form{
+  color: white !important;
+  margin: .5vw 0 0 0;
+}
+
+.form-header{
+  letter-spacing: .3vw;
+}
 
 /* Media Screen */
 @media screen and (max-width: 768px) {
