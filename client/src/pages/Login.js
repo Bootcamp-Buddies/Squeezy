@@ -3,6 +3,7 @@ import { useMutation } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
+import backgroundBlank from "../assets/squeezy-background-blank.png";
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -31,39 +32,56 @@ function Login(props) {
 
   return (
     <div className="container my-1">
-      <div className='form-container'>
-        <h2 className='form-header'>Login</h2>
-        <form className='form' onSubmit={handleFormSubmit}>
-          <div className="flex-row space-between my-2">
-            <label htmlFor="email">Email address:</label>
-            <input
-              placeholder="youremail@test.com"
-              name="email"
-              type="email"
-              id="email"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="flex-row space-between my-2">
-            <label htmlFor="pwd">Password:</label>
-            <input
-              placeholder="******"
-              name="password"
-              type="password"
-              id="pwd"
-              onChange={handleChange}
-            />
-          </div>
-          {error ? (
-            <div>
-              <p className="error-text">The provided credentials are incorrect</p>
+      <div style={{
+        backgroundImage: `url(${backgroundBlank})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        position: '',
+        height: '100vh'
+      }}>
+      </div>
+      <div>
+        <Link className="navbar-brand" to="/">
+          <img
+            className="form-logo"
+            src="./icons/squeezy-logo-black-upright.png"
+            alt="Squeezy Logo"
+          />
+        </Link>
+        <div className='form-container'>
+          <h2 className='form-header'>Login</h2>
+          <form className='form' onSubmit={handleFormSubmit}>
+            <div className="flex-row space-between my-2">
+              <label htmlFor="email">Email address:</label>
+              <input
+                placeholder="youremail@test.com"
+                name="email"
+                type="email"
+                id="email"
+                onChange={handleChange}
+              />
             </div>
-          ) : null}
-          <div className="flex-row flex-end">
-            <button type="submit">Submit</button>
-          </div>
-          <Link className='btn back-button-form' to="/signup">Not a member yet? Sign up.</Link>
-        </form>
+            <div className="flex-row space-between my-2">
+              <label htmlFor="pwd">Password:</label>
+              <input
+                placeholder="******"
+                name="password"
+                type="password"
+                id="pwd"
+                onChange={handleChange}
+              />
+            </div>
+            {error ? (
+              <div>
+               <p className="error-text">The provided credentials are incorrect</p>
+             </div>
+            ) : null}
+            <div className="submit-button">
+              <button type="submit">Submit</button>
+            </div>
+            <Link className='btn back-button-form' to="/signup">Not a member yet? Sign up.</Link>
+          </form>
+        </div>
       </div>
     </div>
   );
