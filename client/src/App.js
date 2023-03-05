@@ -23,7 +23,6 @@ import store from '../src/utils/store';
 import '../src/index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import background from "../src/assets/squeezy-background.png";
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -50,16 +49,6 @@ function App() {
       <Router>
         <div>
           <Provider store={store}>
-            <Nav />
-            <div style={{
-              backgroundImage: `url(${background})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              position: '',
-              height: '100vh'
-            }}>
-            </div>
-
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
