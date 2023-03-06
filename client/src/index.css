@@ -352,6 +352,10 @@ text {
   left: 20vw;
 }
 
+.cart-closed {
+  z-index: 1;
+}
+
 .back-button {
   position: absolute;
   top: 0;
