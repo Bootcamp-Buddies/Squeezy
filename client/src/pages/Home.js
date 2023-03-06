@@ -2,7 +2,7 @@ import React from "react";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
-import background from "../assets/squeezy-background.png";
+import background from "../assets/squeezy-background-opt.jpg";
 import Nav from '../components/Nav/index.js';
 
 
