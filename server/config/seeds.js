@@ -118,7 +118,7 @@ db.once('open', async () => {
       description:
         'The trusty old tangerine is believed to be a variety of another citrus fruit, the mandarin orange. It is much sweeter than a regular orange and is used in preparing a bunch of drinks, desserts, salads, and other dishes. Tangerine peels are so delicious that they are also eaten coated in chocolate!',
       image: 'tangerine.png',
-      category: categories[0]._id,
+      category: categories[1]._id,
       price: 3.99,
       quantity: 1100
     },
