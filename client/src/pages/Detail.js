@@ -15,8 +15,6 @@ import spinner from '../assets/spinner.gif';
 import background from "../assets/squeezy-background.png";
 import Nav from '../components/Nav/index.js';
 
-
-
 function Detail() {
   const state = useSelector((state) => { return state });
   const dispatch = useDispatch();
@@ -81,16 +79,16 @@ function Detail() {
 
   return (
     <>
-      <Nav/>
+      <Nav />
 
-    <div style={{
-              backgroundImage: `url(${background})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              position: '',
-              height: '100vh'
-            }}>
-            </div>
+      <div style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        position: '',
+        height: '100vh'
+      }}>
+      </div>
       {currentProduct && cart ? (
         <div className="detail-container">
           <Link className='back-button btn' to="/">← Back to Products</Link>
