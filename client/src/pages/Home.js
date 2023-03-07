@@ -17,6 +17,7 @@ const Home = () => {
         height: '100vh'
       }}>
       </div>
+      <div className="transition"></div>
       <div id="scrollspyHeading1" className="container-products">
         <CategoryMenu />
         <ProductList />

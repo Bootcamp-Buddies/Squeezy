@@ -380,7 +380,13 @@ text {
 }
 
 .container-products {
-  margin: 3vw !important;
+  padding: 3vw !important;
+  background-image: linear-gradient(white, #e0f79d);
+}
+
+.transition {
+  height: 20px;
+  background-image: linear-gradient(#e0f79d, white);
 }
 
 .form-container {
