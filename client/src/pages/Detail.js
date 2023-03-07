@@ -12,7 +12,7 @@ import {
 import { idbPromise } from '../utils/helpers';
 import { QUERY_PRODUCTS } from '../utils/queries';
 import spinner from '../assets/spinner.gif';
-import background from "../assets/squeezy-background.png";
+import background from "../assets/squeezy-background-opt.jpg";
 import Nav from '../components/Nav/index.js';
 
 function Detail() {

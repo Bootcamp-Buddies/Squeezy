@@ -2,9 +2,8 @@ import React from "react";
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
-import background from "../assets/squeezy-background.png";
+import background from "../assets/squeezy-background-opt.jpg";
 import Nav from '../components/Nav/index.js';
-
 
 const Home = () => {
   return (
@@ -18,7 +17,8 @@ const Home = () => {
         height: '100vh'
       }}>
       </div>
-      <div className="container-products">
+      <div className="transition"></div>
+      <div id="scrollspyHeading1" className="container-products">
         <CategoryMenu />
         <ProductList />
         <Cart />

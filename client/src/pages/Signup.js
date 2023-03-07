@@ -4,7 +4,7 @@ import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 
-import backgroundBlank from "../assets/squeezy-background-blank.png";
+import backgroundBlank from "../assets/squeezy-background-blank-opt.jpg";
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
