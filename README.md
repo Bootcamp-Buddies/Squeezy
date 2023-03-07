@@ -1,8 +1,13 @@
 
 # Easy Peasy, Lemon Squeezy!
 
+## Description
+
 Bootcamp buddies would like to present Squeezy, a website where you can order your citrus to stave of scurvy. Built and designed to be a submission for our Michigan State University Bootcamp's Final Project. We have built a working webstore, for a fictional company - Squeezy. Based on a full stack MERN collaboration to showcase the class knowledge we have gained.
 
+## Deployment and Repository links
+[Github Repository](https://github.com/Bootcamp-Buddies/Squeezy)<br>
+[Heroku Deployed Web Application](https://squeezy-citrus.herokuapp.com/)
 
 ![Logo](./client/public/readme-images/logo.PNG)
 
