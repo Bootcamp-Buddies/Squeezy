@@ -50,7 +50,7 @@ function Nav() {
                   <a class="nav-link" href="#scrollspyHeading1">Products</a>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" href="/story">Our Story</Link>
+                  <Link class="nav-link" aria-current="page" to="/OurStory">Our Story</Link>
                 </li>
               </ul>
             </div>
@@ -62,11 +62,9 @@ function Nav() {
   }
 
   return (
-    // <header>
     <nav>
       {showNavigation()}
     </nav>
-    // </header>
   );
 }
 
