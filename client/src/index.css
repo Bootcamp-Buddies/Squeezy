@@ -405,6 +405,22 @@ text {
   justify-content: center;
 }
 
+.story-container {
+  position: absolute;
+  top: 15vw;
+  left: 41vw;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white;
+  border-radius: 40px;
+  padding: 2vw;
+  width: 40vw;
+  border: white 2px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 form{
   width: 90%;
   text-align: center;
