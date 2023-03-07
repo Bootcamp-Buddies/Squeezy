@@ -47,6 +47,9 @@ function Nav() {
                   <Link class="nav-link" aria-current="page" to="/login">Login</Link>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading1">Products</a>
+                </li>
+                <li class="nav-item">
                   <Link class="nav-link" href="/story">Our Story</Link>
                 </li>
               </ul>

@@ -5,7 +5,6 @@ import Cart from "../components/Cart";
 import background from "../assets/squeezy-background-opt.jpg";
 import Nav from '../components/Nav/index.js';
 
-
 const Home = () => {
   return (
     <div className="container">
@@ -18,7 +17,7 @@ const Home = () => {
         height: '100vh'
       }}>
       </div>
-      <div className="container-products">
+      <div id="scrollspyHeading1" className="container-products">
         <CategoryMenu />
         <ProductList />
         <Cart />
