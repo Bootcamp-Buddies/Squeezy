@@ -1,4 +1,4 @@
-import Nav from '../components/Nav/index.js';
+import Nav from '../components/Nav/index2.js';
 import { useEffect } from 'react';
 
 const OurStory = () => {

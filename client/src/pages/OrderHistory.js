@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
-import Nav from '../components/Nav/index.js';
+import Nav from '../components/Nav/index2.js';
 
 
 function OrderHistory() {
