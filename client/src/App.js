@@ -22,7 +22,6 @@ import store from '../src/utils/store';
 import '../src/index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
