@@ -1,7 +1,8 @@
 .cart {
   position: fixed;
-  top: 10vw;
-  right: 0;
+  top: 6vw;
+  right: 0vw;
+  margin: 0 2vw 2vw 2vw;
   min-width: 20%;
   max-width: 30%;
   max-height: 60%;
@@ -13,7 +14,6 @@
   border: black 2px solid;
   border-radius: 20px;
   text-align: center;
-
 }
 
 .cart h2 {
@@ -44,7 +44,7 @@
   right: 1%;
   font-size: 2rem;
   cursor: pointer;
-  background-color: #feebda;
+  background-color: #e0f79d;
   border-radius: 50%;
   padding: .25rem;
   width: 50px;
@@ -67,13 +67,27 @@
   margin: 0 .5rem 1rem 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .cart {
+    top: 9vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cart {
+    top: 12vw;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .cart {
     position: relative;
     max-width: 100%;
     max-height: auto;
-    box-shadow: none;
-    background-color: inherit;
+    box-shadow: none;;
+    /* background-color: inherit; */
+    margin-top: 0 !important;
+    margin-bottom: 20vw !important;
   }
 
   .cart-closed {

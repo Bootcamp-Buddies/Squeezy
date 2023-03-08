@@ -48,23 +48,23 @@ function Login(props) {
             alt="Squeezy"
           />
         </Link>
-        <div className='form-container'>
+        <div className='form-container' id='login'>
           <h2 className='form-header'>Login</h2>
           <form className='form' onSubmit={handleFormSubmit}>
-            <div className="flex-row space-between">
-              <label htmlFor="email">Email address:</label>
+            <div className="flex-row space-between my-2">
+              <label htmlFor="email">Email</label>
               <input
-                placeholder="youremail@test.com"
+                placeholder="Your Email"
                 name="email"
                 type="email"
                 id="email"
                 onChange={handleChange}
               />
             </div>
-            <div className="flex-row space-between">
-              <label htmlFor="pwd">Password:</label>
+            <div className="flex-row space-between my-2">
+              <label htmlFor="pwd">Password</label>
               <input
-                placeholder="******"
+                placeholder="***********"
                 name="password"
                 type="password"
                 id="pwd"

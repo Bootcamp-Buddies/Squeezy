@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
+import Nav from '../components/Nav/index.js';
+
 
 function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
@@ -14,6 +16,15 @@ function OrderHistory() {
   return (
     <>
       <div className="container">
+
+      <Nav />
+      <div style={{
+        backgroundImage: `linear-gradient(white, #e0f79d)`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        position: '',
+        height: '100vh'
+      }}>
         <Link to="/">← Back to Products</Link>
 
         {user ? (
@@ -43,6 +54,8 @@ function OrderHistory() {
             ))}
           </>
         ) : null}
+      </div>
+
       </div>
     </>
   );
