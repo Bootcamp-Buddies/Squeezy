@@ -24,7 +24,7 @@ const Home = () => {
       }}>
       </div>
       <div className="transition"></div>
-      <div id="products" className="container-products">
+      <div id="scrollspyHeading1" className="container-products">
         <CategoryMenu />
         <ProductList />
         <Cart />

@@ -27,9 +27,9 @@ function Nav() {
                 <li class="nav-item">
                   <Link class="nav-link" aria-current="page" to="/orderHistory">Order History</Link>
                 </li>
-                {/* <li class="nav-item">
-                  <Link class="nav-link" to="#">Products</Link>
-                </li> */}
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading1">Products</a>
+                </li>
                 <li class="nav-item">
                   <Link class="nav-link" aria-current="page" to="/OurStory">Our Story</Link>
                 </li>
@@ -65,9 +65,9 @@ function Nav() {
                 <li class="nav-item">
                   <Link class="nav-link" to="/login">Login</Link>
                 </li>
-                {/* <li class="nav-item">
-                <Link class="nav-link" to="#products">Products</Link>
-                </li> */}
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading1">Products</a>
+                </li>
                 <li class="nav-item">
                   <Link class="nav-link" to="/OurStory">Our Story</Link>
                 </li>
