@@ -12,7 +12,7 @@ function Nav() {
             <Link className="navbar-brand" to="/">
               <img
                 className="brand-logo"
-                src="./icons/squeezy-logo-white.png"
+                src="../icons/squeezy-logo-white.png"
                 alt="Squeezy"
               />
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,9 @@ function Nav() {
                 <li class="nav-item">
                   <Link class="nav-link" aria-current="page" to="/orderHistory">Order History</Link>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading1">Products</a>
-                </li>
+                {/* <li class="nav-item">
+                  <Link class="nav-link" to="#">Products</Link>
+                </li> */}
                 <li class="nav-item">
                   <Link class="nav-link" aria-current="page" to="/OurStory">Our Story</Link>
                 </li>
@@ -45,27 +45,29 @@ function Nav() {
             <Link className="navbar-brand" to="/">
               <img
                 className="brand-logo"
-                src="./icons/squeezy-logo-white.png"
-                alt="Squeezy Logo"
+                src="../icons/squeezy-logo-white.png"
+                alt="Squeezy"
               />
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             </Link>
 
-
             <div class="collapse navbar-collapse" id="navbarNav">
 
               <ul class="navbar-nav">
+              <li class="nav-item">
+                  <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+                </li>
                 <li class="nav-item">
-                  <Link class="nav-link active" aria-current="page" to="/signup">Signup</Link>
+                  <Link class="nav-link" aria-current="page" to="/signup">Signup</Link>
                 </li>
                 <li class="nav-item">
                   <Link class="nav-link" to="/login">Login</Link>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#scrollspyHeading1">Products</a>
-                </li>
+                {/* <li class="nav-item">
+                <Link class="nav-link" to="#products">Products</Link>
+                </li> */}
                 <li class="nav-item">
                   <Link class="nav-link" to="/OurStory">Our Story</Link>
                 </li>

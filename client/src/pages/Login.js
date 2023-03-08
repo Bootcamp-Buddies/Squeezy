@@ -31,7 +31,7 @@ function Login(props) {
   };
 
   return (
-    <div className="container my-1">
+    <div className="container">
       <div style={{
         backgroundImage: `url(${backgroundBlank})`,
         backgroundRepeat: 'no-repeat',
@@ -45,16 +45,16 @@ function Login(props) {
           <img
             className="form-logo"
             src="./icons/squeezy-logo-black-upright.png"
-            alt="Squeezy Logo"
+            alt="Squeezy"
           />
         </Link>
-        <div className='form-container'>
+        <div className='form-container' id='login'>
           <h2 className='form-header'>Login</h2>
           <form className='form' onSubmit={handleFormSubmit}>
             <div className="flex-row space-between my-2">
-              <label htmlFor="email">Email address:</label>
+              <label htmlFor="email">Email</label>
               <input
-                placeholder="youremail@test.com"
+                placeholder="Your Email"
                 name="email"
                 type="email"
                 id="email"
@@ -62,9 +62,9 @@ function Login(props) {
               />
             </div>
             <div className="flex-row space-between my-2">
-              <label htmlFor="pwd">Password:</label>
+              <label htmlFor="pwd">Password</label>
               <input
-                placeholder="******"
+                placeholder="***********"
                 name="password"
                 type="password"
                 id="pwd"

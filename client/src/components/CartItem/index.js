@@ -35,7 +35,7 @@ const CartItem = ({ item }) => {
   return (
     <div className="flex-row">
       <div>
-        <img style={{'width': "8vw"}}
+        <img style={{ 'width': "8vw" }}
           src={`/images/${item.image}`}
           alt=""
         />
@@ -51,11 +51,12 @@ const CartItem = ({ item }) => {
             onChange={onChange}
           />
           <span
+            className='remove-icon'
             role="img"
             aria-label="trash"
             onClick={() => removeFromCart(item)}
           >
-            🗑️
+            ✗
           </span>
         </div>
       </div>

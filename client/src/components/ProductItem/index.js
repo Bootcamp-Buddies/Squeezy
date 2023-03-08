@@ -63,7 +63,6 @@ function ProductItem(item) {
       </div>
       </Link>
 
-      
     </div>
   );
 }

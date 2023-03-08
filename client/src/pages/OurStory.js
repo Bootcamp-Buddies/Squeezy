@@ -1,10 +1,14 @@
-// import portrait from "../assets/mr-squeezy.png";
 import Nav from '../components/Nav/index.js';
+import { useEffect } from 'react';
 
 const OurStory = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
-    <div className="container my-1">
+    <div className="container">
       <Nav />
       <div style={{
         backgroundImage: `linear-gradient(white, #e0f79d)`,
@@ -22,7 +26,7 @@ const OurStory = () => {
           />
 
         <div className='story-container'>
-          <h2 className='form-header'>The Juice on <img className="brand-logo" src="./icons/squeezy-logo-white.png" alt="Squeezy Logo" />™</h2>
+          <h2 className='form-header'>The Juice on <img className="brand-logo" src="./icons/squeezy-logo-white.png" alt="Squeezy" />™</h2>
           <p>Welcome to Squeezy, your go-to source for fresh and delicious citrus fruits! We are a family-owned and operated business that has been providing high-quality citrus to customers for many years.</p>
           <p>Our journey started when Mr. Squeezy first planted citrus trees in Citrusland over many years ago. With a passion for growing the best citrus possible, Mr. Squeezy soon became known for their incredible oranges, lemons, limes, and grapefruits.</p>
           <p>Today, we continue to carry on that tradition of excellence by carefully selecting the best citrus from our own orchards and from trusted growers in Citrusland. We handpick our citrus to ensure that only the freshest, juiciest, and most flavorful fruit makes it into your hands.</p>

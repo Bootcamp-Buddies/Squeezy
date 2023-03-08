@@ -45,6 +45,12 @@ button:disabled:hover {
   transform: scale(1.0);
 }
 
+.nav-link.active {
+  transition: .5s;
+  --bs-navbar-active-color: rgb(255, 255, 255);
+
+}
+
 .overlay-container {
   position: absolute;
   opacity: 0;
@@ -112,10 +118,6 @@ img {
   max-width: 100%;
 }
 
-span[role="img"] {
-  cursor: default;
-}
-
 input {
   font-size: 1rem;
   padding: 0.25rem;
@@ -123,6 +125,7 @@ input {
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  text-align: center;
 }
 
 input:focus {
@@ -133,6 +136,8 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover {
@@ -169,12 +174,20 @@ header {
   text-decoration: none !important;
   padding-top: 0 !important;
   padding-bottom: 1vh !important;
+  transition: .5s;
+}
+
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  transition: .5s;
 }
 
 .brand-logo {
   width: 140px;
   height: 58px;
 }
+
 
 .detail-container {
   text-align: center;
@@ -314,15 +327,6 @@ text {
   margin: 1vw 0 2vw 0;
 }
 
-.cart {
-  position: absolute;
-  top: 5vw !important;
-  left: 20vw;
-}
-
-.cart-closed {
-  z-index: 1;
-}
 
 .back-button {
   position: absolute;
@@ -373,6 +377,12 @@ text {
   justify-content: center;
 }
 
+#login {
+  top: 15vw;
+  height: 28vw;
+
+}
+
 .story-container {
   position: absolute;
   top: 10vw;
@@ -405,6 +415,12 @@ input {
   left: 53.5vw;
   width: 15%;
   height: 22%;
+  transition: .5s;
+}
+
+.form-logo:hover {
+  transform: scale(1.05);
+  transition: .5s;
 }
 
 .submit-button {
@@ -430,6 +446,17 @@ input {
   left: 8vw;
   height: 40%;
 }
+
+.remove-icon:hover {
+  cursor: pointer;
+}
+
+.order-history{
+  position: absolute;
+  top: 20vw;
+}
+
+
 /* 
 .background {
   background-size: 100% !important;

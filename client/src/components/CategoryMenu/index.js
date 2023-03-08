@@ -34,6 +34,7 @@ function CategoryMenu() {
     dispatch({
       type: UPDATE_CURRENT_CATEGORY,
       currentCategory: id,
+      isDisabled: false
     });
   };
 
@@ -49,7 +50,16 @@ function CategoryMenu() {
         >
           {item.name}
         </button>
+
       ))}
+
+      <button
+        onClick={() => {
+          handleClick();
+        }}
+      >
+        Reset
+      </button>
     </div>
   );
 }
