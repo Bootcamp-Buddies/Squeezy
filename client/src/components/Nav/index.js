@@ -13,7 +13,7 @@ function Nav() {
               <img
                 className="brand-logo"
                 src="./icons/squeezy-logo-white.png"
-                alt="Squeezy Logo"
+                alt="Squeezy"
               />
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,13 +61,13 @@ function Nav() {
                   <Link class="nav-link active" aria-current="page" to="/signup">Signup</Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" aria-current="page" to="/login">Login</Link>
+                  <Link class="nav-link" to="/login">Login</Link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#scrollspyHeading1">Products</a>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" aria-current="page" to="/OurStory">Our Story</Link>
+                  <Link class="nav-link" to="/OurStory">Our Story</Link>
                 </li>
               </ul>
             </div>

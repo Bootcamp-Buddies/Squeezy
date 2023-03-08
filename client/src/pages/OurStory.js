@@ -1,4 +1,4 @@
-import backgroundBlank from "../assets/squeezy-background-blank-opt.jpg";
+// import portrait from "../assets/mr-squeezy.png";
 import Nav from '../components/Nav/index.js';
 
 const OurStory = () => {
@@ -7,26 +7,28 @@ const OurStory = () => {
     <div className="container my-1">
       <Nav />
       <div style={{
-        backgroundImage: `url(${backgroundBlank})`,
+        backgroundImage: `linear-gradient(white, #e0f79d)`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         position: '',
-        height: '100vh'
+        height: '130vh'
       }}>
       </div>
       <div>
-        {/* <Link className="navbar-brand" to="/">
-          <img
-            className="form-logo"
-            src="./icons/squeezy-logo-black-upright.png"
-            alt="Squeezy Logo"
+      <img
+            className="portrait"
+            src="./images/mr-squeezy.png"
+            alt="Mr. Squeezy"
           />
-        </Link> */}
+
         <div className='story-container'>
-          <h2 className='form-header'>The Juice on <img className="brand-logo" src="./icons/squeezy-logo-white.png" alt="Squeezy Logo"/>™</h2>
-          <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra nibh cras pulvinar mattis nunc sed blandit. Dui ut ornare lectus sit amet est placerat. </p>
-          <p>Proin sed libero enim sed faucibus turpis in. Eget nullam non nisi est sit amet facilisis. Tincidunt id aliquet risus feugiat in ante metus dictum. Senectus et netus et malesuada fames ac. </p>
-          <p>Lectus magna fringilla urna porttitor rhoncus. Massa placerat duis ultricies lacus. Amet nisl suscipit adipiscing bibendum est. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Nunc eget lorem dolor sed viverra ipsum. Et malesuada fames ac turpis egestas maecenas pharetra convallis.</p>
+          <h2 className='form-header'>The Juice on <img className="brand-logo" src="./icons/squeezy-logo-white.png" alt="Squeezy Logo" />™</h2>
+          <p>Welcome to Squeezy, your go-to source for fresh and delicious citrus fruits! We are a family-owned and operated business that has been providing high-quality citrus to customers for many years.</p>
+          <p>Our journey started when Mr. Squeezy first planted citrus trees in Citrusland over many years ago. With a passion for growing the best citrus possible, Mr. Squeezy soon became known for their incredible oranges, lemons, limes, and grapefruits.</p>
+          <p>Today, we continue to carry on that tradition of excellence by carefully selecting the best citrus from our own orchards and from trusted growers in Citrusland. We handpick our citrus to ensure that only the freshest, juiciest, and most flavorful fruit makes it into your hands.</p>
+          <p>At Squeezy, we are committed to sustainability and responsible farming practices. We use natural fertilizers and pest control methods to ensure that our citrus is not only delicious, but also good for you and the environment.</p>
+          <p>Whether you're a home cook looking for the perfect ingredient for your recipe, a juice bar owner in need of fresh citrus for your customers, or just a citrus lover who can't get enough of that tangy goodness, we've got you covered. Shop our selection of oranges, lemons, limes, grapefruits, and more, and taste the difference that comes from a passion for quality and freshness.</p>
+          <p>Thank you for choosing Squeezy for your citrus needs. We can't wait to share our delicious fruit with you!</p>
         </div>
       </div>
     </div>

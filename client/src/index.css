@@ -77,16 +77,10 @@ button:disabled:hover {
   align-items: center;
   border-radius: 30px !important;
   margin: 1vw;
+  width: 30% !important;
+  text-align: center;
+  transition: .5s;
 }
-
-/* .container {
-  margin-right: 1vw !important;
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-} */
 
 .container {
   /* margin-right: 1vw !important; */
@@ -139,12 +133,6 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.card {
-  width: 30% !important;
-  text-align: center;
-  transition: .5s;
 }
 
 .card:hover {
@@ -243,6 +231,7 @@ text {
   width: 500px;
   height: 300px;
   transition: .5s;
+  /* margin: 1.5vw; */
 }
 
 .overlay {
@@ -254,6 +243,7 @@ text {
   background: rgba(0, 0, 0, 0);
   transition: background 0.5s ease;
   border-radius: 30px;
+  border: black 1px solid !important;
 }
 
 .card-container:hover .overlay {
@@ -267,24 +257,6 @@ text {
   height: 75%;
   left: 0;
 }
-
-/* .title {
-  position: absolute;
-  width: 500px;
-  left: 0;
-  top: 120px;
-  font-weight:700;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: black;
-  z-index: 1;
-  transition: top .5s ease;
-}
-
-.card-container:hover .title {
-  top: 90px;
-} */
 
 .card-text {
   position: absolute;
@@ -306,13 +278,13 @@ text {
   background-color: white !important;
   border-bottom: black 1px solid !important;
   margin-bottom: 1vh !important;
+  border-radius: 30px 30px 0 0 !important;
 }
 
 .card-container:hover .card-text {
   top: 90px;
   opacity: 1;
 }
-
 
 .button {
   position: absolute;
@@ -336,10 +308,6 @@ text {
 
 .card-container:hover .button {
   opacity: 1;
-}
-
-.card {
-  border: black 1px solid !important;
 }
 
 .category-div {
@@ -407,13 +375,13 @@ text {
 
 .story-container {
   position: absolute;
-  top: 15vw;
-  left: 41vw;
+  top: 10vw;
+  left: 35vw;
   background-color: rgba(0, 0, 0, 0.5) !important;
   color: white;
   border-radius: 40px;
   padding: 2vw;
-  width: 40vw;
+  width: 60%;
   border: white 2px solid;
   display: flex;
   flex-direction: column;
@@ -421,7 +389,7 @@ text {
   justify-content: center;
 }
 
-form{
+form {
   width: 90%;
   text-align: center;
 }
@@ -439,22 +407,112 @@ input {
   height: 22%;
 }
 
-.submit-button{
+.submit-button {
   text-align: center;
 }
 
-.back-button-form{
+.back-button-form {
   color: white !important;
   margin: .5vw 0 0 0;
 }
 
-.form-header{
+.form-header {
   letter-spacing: .3vw;
 }
 
+.about-me {
+  background-image: linear-gradient(white, #e0f79d);
+}
+
+.portrait {
+  position: absolute;
+  top: 16vw;
+  left: 8vw;
+  height: 40%;
+}
+/* 
+.background {
+  background-size: 100% !important;
+  background-position: 0% 0%;
+  background-position-y: bottom;
+  height: fit-content;
+  
+} */
+
 /* Media Screen */
+@media screen and (max-width: 1050px) {
+  .card-header {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-header {
+    padding: 0 !important;
+    font-size: small;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    padding: 1vw;
+  }
+
+  .stock,
+  .price {
+    margin: 0;
+  }
+
+  .card-container:hover .overlay-container {
+    top: 0;
+  }
+
+  .card.card-container {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    height: 30vw !important;
+  }
+
+  .overlay-container {
+    top: 0;
+  }
+
+  .flex-row {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card-image {
+    height: 40%;
+    position: sticky;
+  }
+
+  .card-text {}
+
+  .card-container:hover .overlay-container {
+    top: 10vw;
+    font-size: small;
+    font-size: 3vw !important;
+    transition: 0s !important;
+  }
+
+  button:hover {
+    transition: 0s;
+  }
+
+  .overlay-container {
+    transition: 0s !important;
+    font-size: 10px;
+  }
+
 }

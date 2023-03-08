@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="container">
       <Nav/>
-      <div style={{
+      <div className="background" style={{
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
