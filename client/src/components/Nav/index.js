@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 function Nav() {
 
   function showNavigation() {
+
+    const logout = (event) => {
+      event.preventDefault();
+      Auth.logout();
+    };
+
     if (Auth.loggedIn()) {
       return (
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -20,12 +26,14 @@ function Nav() {
               </button>
             </Link>
 
-
             <div class="collapse navbar-collapse" id="navbarNav">
 
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <Link class="nav-link" aria-current="page" to="/orderHistory">Order History</Link>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" onClick={logout}>Sign Out</button>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#scrollspyHeading1">Products</a>
