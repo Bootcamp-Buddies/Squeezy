@@ -45,8 +45,8 @@ function Nav() {
             <Link className="navbar-brand" to="/">
               <img
                 className="brand-logo"
-                src="./icons/squeezy-logo-white.png"
-                alt="Squeezy Logo"
+                src="../icons/squeezy-logo-white.png"
+                alt="Squeezy"
               />
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

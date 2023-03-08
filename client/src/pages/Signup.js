@@ -52,7 +52,7 @@ function Signup(props) {
           <img
             className="form-logo"
             src="./icons/squeezy-logo-black-upright.png"
-            alt="Squeezy Logo"
+            alt="Squeezy"
           />
         </Link>
 
@@ -61,7 +61,7 @@ function Signup(props) {
 
           <h2 className='form-header'>Signup</h2>
           <form className='form' onSubmit={handleFormSubmit}>
-            <div className="flex-row space-between my-2">
+            <div className="flex-row space-between my-2 ">
               <label htmlFor="firstName">First Name:</label>
               <input
                 placeholder="First Name"

@@ -78,9 +78,8 @@ function Detail() {
   };
 
   return (
-    <>
+    <div className="container">
       <Nav />
-
       <div style={{
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'no-repeat',
@@ -118,7 +117,7 @@ function Detail() {
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
       <Cart />
-    </>
+    </div>
   );
 }
 
