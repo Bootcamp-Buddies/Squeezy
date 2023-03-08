@@ -4,8 +4,14 @@ import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 import background from "../assets/squeezy-background-opt.jpg";
 import Nav from '../components/Nav/index.js';
+import { useEffect } from "react";
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="container">
       <Nav/>
@@ -18,7 +24,7 @@ const Home = () => {
       }}>
       </div>
       <div className="transition"></div>
-      <div id="scrollspyHeading1" className="container-products">
+      <div id="products" className="container-products">
         <CategoryMenu />
         <ProductList />
         <Cart />

@@ -133,6 +133,7 @@ input:focus {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card:hover {
@@ -314,15 +315,6 @@ text {
   margin: 1vw 0 2vw 0;
 }
 
-.cart {
-  position: absolute;
-  top: 5vw !important;
-  left: 20vw;
-}
-
-.cart-closed {
-  z-index: 1;
-}
 
 .back-button {
   position: absolute;

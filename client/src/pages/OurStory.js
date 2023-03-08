@@ -1,7 +1,12 @@
 // import portrait from "../assets/mr-squeezy.png";
 import Nav from '../components/Nav/index.js';
+import { useEffect } from 'react';
 
 const OurStory = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className="container my-1">
