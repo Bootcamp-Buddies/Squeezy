@@ -36,7 +36,7 @@ function Nav() {
                   <Link class="nav-link" aria-current="page" to="/orderHistory">Order History</Link>
                 </li>
                 <li class="nav-item">
-                  <button class="nav-link" style={{"margin": "1vw","padding":"0","border":"none","background":"none"}} onClick={logout}>Sign Out</button>
+                  <button class="nav-link" style={{"margin": "1vw","padding":"0","border":"none","background":"none","padding-top":".4vw"}} onClick={logout}>Sign Out</button>
                 </li>
                 <li class="nav-item">
                   <Link class="nav-link" aria-current="page" to="/OurStory">Our Story</Link>
