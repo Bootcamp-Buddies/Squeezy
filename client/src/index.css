@@ -157,6 +157,10 @@ input:focus {
   border-radius: 20%;
 }
 
+.navbar-toggler {
+  margin: 3vw !important;
+}
+
 .navbar {
   /* padding: 1%; */
   position: fixed !important;
@@ -181,15 +185,14 @@ header {
   transition: .5s;
 }
 
-
-.navbar-brand:hover {
-  transform: scale(1.05);
-  transition: .5s;
-}
-
 .brand-logo {
   width: 140px;
   height: 58px;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+  transition: .5s;
 }
 
 
@@ -374,6 +377,7 @@ text {
   border-radius: 40px;
   padding: 2vw;
   width: 30vw;
+  height: 65%;
   border: white 2px solid;
   display: flex;
   flex-direction: column;
@@ -415,10 +419,10 @@ input {
 
 .form-logo {
   position: absolute;
-  top: 1.5vw;
-  left: 53.5vw;
-  width: 15%;
-  height: 22%;
+  top: 3vw;
+  left: 54.5vw;
+  width: 13%;
+  height: 19%;
   transition: .5s;
 }
 
@@ -455,7 +459,7 @@ input {
   cursor: pointer;
 }
 
-.order-history{
+.order-history {
   position: absolute;
   top: 20vw;
 }
@@ -470,10 +474,61 @@ input {
 } */
 
 /* Media Screen */
+@media screen and (max-width: 1300px) {
+  .form-logo {
+    top: 5vw;
+    height: 12%;
+    width: auto;
+    left: 55vw;
+  }
+
+  #login {
+    height: 45vw;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .card-header {
     padding: 0 !important;
   }
+
+  .form-logo {
+    height: 12%;
+    top: 4vw;
+  }
+
+  .container-fluid {
+    justify-content: center !important;
+  }
+
+  #login{
+    left: 41vw;
+    width: 40vw;
+    top: 17vw !important;
+    height: 40vw !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .form-logo {
+    display: none;
+  }
+
+  .form-container {
+    left: 28vw;
+    width: 40vw;
+    top: 15vw !important;
+    height: 58vw !important;
+  }
+
+  #login{
+    left: 22vw;
+    width: 50vw;
+    top: 20vw !important;
+    height: 48vw !important;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -481,12 +536,51 @@ input {
     padding: 0 !important;
     font-size: small;
   }
+
+  .form-container {
+    left: 28vw;
+    width: 40vw;
+    top: 17vw !important;
+    height: 65vw !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
   }
+
+  .form-container {
+    left: 21vw;
+    width: 50vw;
+    top: 26vw !important;
+    height: 80vw !important;
+  }
+
+  #login {
+    top: 30vw !important;
+    left: 16vw !important; 
+    height: 60vw !important;
+    width: 60vw;
+  }
+
+}
+
+@media screen and (max-width: 668px) {
+  .form-container {
+    left: 15vw;
+    top: 25vw;
+    width: 60vw;
+    height: 90vw !important;
+  }
+
+  #login {
+    top: 30vw !important;
+    left: 13vw !important; 
+    height: 70vw !important;
+    width: 70vw;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -519,6 +613,30 @@ input {
     align-items: baseline;
 
   }
+
+  .form-container {
+    left: 7vw;
+    top: 15vw !important;
+    width: 85vw;
+    height: 110vw !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-container {
+    left: 7vw;
+    top: 30vw !important;
+    width: 85vw;
+    height: 130vw !important;
+  }
+
+  #login {
+    top: 40vw !important;
+    left: 10vw !important; 
+    height: 90vw !important;
+    width: 80vw;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -527,7 +645,12 @@ input {
     position: sticky;
   }
 
-  .card-text {}
+  .form-container {
+    left: 4vw;
+    top: 40vw !important;
+    width: 90vw;
+    height: 170vw !important;
+  }
 
   .card-container:hover .overlay-container {
     top: 10vw;
@@ -545,4 +668,10 @@ input {
     font-size: 10px;
   }
 
+  #login {
+    top: 70vw !important;
+    left: 10vw !important; 
+    height: 120vw !important;
+    width: 80vw;
+  }
 }
