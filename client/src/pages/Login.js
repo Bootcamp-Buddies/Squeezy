@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
 import backgroundBlank from "../assets/squeezy-background-blank-opt.jpg";
+import Nav from '../components/Nav/index2.js';
 
 function Login(props) {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -32,10 +33,12 @@ function Login(props) {
 
   return (
     <div className="container">
+      <Nav />
       <div style={{
         backgroundImage: `url(${backgroundBlank})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        marginTop: '6vh',
         position: '',
         height: '100vh'
       }}>
