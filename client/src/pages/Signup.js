@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
+import Nav from '../components/Nav/index2.js';
 
 import backgroundBlank from "../assets/squeezy-background-blank-opt.jpg";
 
@@ -38,10 +39,12 @@ function Signup(props) {
   return (
 
     <div className="container">
+      <Nav />
       <div style={{
         backgroundImage: `url(${backgroundBlank})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
+        marginTop: '6vh',
         position: '',
         height: '100vh'
       }}>

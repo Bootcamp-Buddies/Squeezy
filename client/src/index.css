@@ -27,7 +27,7 @@ button {
   color: white;
   background-color: #212529d8;
   border-radius: 20px !important;
-  margin: .5vw !important;
+  margin: .35vw !important;
   transition: .5s;
 }
 
@@ -48,7 +48,11 @@ button:disabled:hover {
 .nav-link.active {
   transition: .5s;
   --bs-navbar-active-color: rgb(255, 255, 255);
+}
 
+.nav-link:hover {
+  transform: translateY(-5px);
+  transition: .5s;
 }
 
 .overlay-container {
