@@ -398,7 +398,7 @@ text {
   background-color: rgba(0, 0, 0, 0.5) !important;
   color: white;
   border-radius: 40px;
-  padding: 2vw;
+  padding: 3vw;
   width: 60%;
   border: white 2px solid;
   display: flex;
@@ -485,6 +485,31 @@ input {
   #login {
     height: 45vw;
   }
+
+  .portrait {
+    position: static;
+  }
+
+  .story-container{
+    position: static;
+    margin-top: 5vw;
+    width: 80vw;
+  }
+
+  .our-story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vw;
+    left: 35vw;
+    width: 30%;
+  }
+
+  .story-container{
+    margin-bottom: 5vw;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -501,7 +526,7 @@ input {
     justify-content: center !important;
   }
 
-  #login{
+  #login {
     left: 41vw;
     width: 40vw;
     top: 17vw !important;
@@ -522,11 +547,22 @@ input {
     height: 58vw !important;
   }
 
-  #login{
+  #login {
     left: 22vw;
     width: 50vw;
     top: 20vw !important;
     height: 48vw !important;
+  }
+
+  .our-story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20vw;
+    left: 35vw;
+    width: 30%;
   }
 
 }
@@ -559,7 +595,7 @@ input {
 
   #login {
     top: 30vw !important;
-    left: 16vw !important; 
+    left: 16vw !important;
     height: 60vw !important;
     width: 60vw;
   }
@@ -576,9 +612,20 @@ input {
 
   #login {
     top: 30vw !important;
-    left: 13vw !important; 
+    left: 13vw !important;
     height: 70vw !important;
     width: 70vw;
+  }
+
+  .our-story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25vw;
+    left: 35vw;
+    width: 30%;
   }
 
 }
@@ -632,9 +679,20 @@ input {
 
   #login {
     top: 40vw !important;
-    left: 10vw !important; 
+    left: 10vw !important;
     height: 90vw !important;
     width: 80vw;
+  }
+
+  .our-story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35vw;
+    left: 35vw;
+    width: 30%;
   }
 
 }
@@ -670,7 +728,7 @@ input {
 
   #login {
     top: 70vw !important;
-    left: 10vw !important; 
+    left: 10vw !important;
     height: 120vw !important;
     width: 80vw;
   }
