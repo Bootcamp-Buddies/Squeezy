@@ -106,7 +106,7 @@ function Signup(props) {
                 id="pwd"
                 onChange={handleChange}
               />
-              <div style={{ 'marginTop': '.5vh', 'width': '100%' }}><PasswordStrengthBar
+              <div className='password-check' style={{'marginTop': '.5vh', 'width': '100%' }}><PasswordStrengthBar
                 password={inputValue} 
                 minLength={8}
                 onChangeScore={(score, feedback) => {
