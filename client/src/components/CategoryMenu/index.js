@@ -58,7 +58,7 @@ function CategoryMenu() {
           handleClick();
         }}
       >
-        Reset
+        All Categories
       </button>
     </div>
   );
