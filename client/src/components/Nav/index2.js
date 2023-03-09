@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 
 function Nav() {
 
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -24,8 +29,14 @@ function Nav() {
             <div class="collapse navbar-collapse" id="navbarNav">
 
               <ul class="navbar-nav">
+              <li class="nav-item">
+                  <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+                </li>
                 <li class="nav-item">
                   <Link class="nav-link" aria-current="page" to="/orderHistory">Order History</Link>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" style={{"margin": "1vw","padding":"0","border":"none","background":"none"}} onClick={logout}>Sign Out</button>
                 </li>
                 <li class="nav-item">
                   <Link class="nav-link" aria-current="page" to="/OurStory">Our Story</Link>

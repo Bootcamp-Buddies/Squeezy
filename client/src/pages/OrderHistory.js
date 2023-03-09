@@ -23,7 +23,9 @@ function OrderHistory() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         position: '',
-        height: '100vh'
+        height: '100vh',
+        marginTop: '10%',
+        paddingLeft: '1%'
       }}>
         <Link to="/">← Back to Products</Link>
 
