@@ -18,12 +18,12 @@ const OurStory = () => {
         height: '130vh'
       }}>
       </div>
-      <div>
-      <img
-            className="portrait"
-            src="./images/mr-squeezy.png"
-            alt="Mr. Squeezy"
-          />
+      <div className='our-story-container'>
+        <img
+          className="portrait"
+          src="./images/mr-squeezy.png"
+          alt="Mr. Squeezy"
+        />
 
         <div className='story-container'>
           <h2 className='form-header'>The Juice on <img className="brand-logo" src="./icons/squeezy-logo-white.png" alt="Squeezy" />™</h2>
