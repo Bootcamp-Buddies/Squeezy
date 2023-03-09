@@ -55,9 +55,10 @@ button:disabled:hover {
   transition: .5s;
 }
 
-p {
+.password-check p{
   color: white !important;
 }
+
 .overlay-container {
   position: absolute;
   opacity: 0;
@@ -109,6 +110,7 @@ p {
 img {
   width: auto;
   height: 16vh;
+  max-width: 100%;
 }
 
 button:hover {
@@ -119,10 +121,6 @@ button:hover {
 button[disabled] {
   cursor: default;
   opacity: .8;
-}
-
-img {
-  max-width: 100%;
 }
 
 input {
@@ -378,7 +376,7 @@ text {
   background-color: rgba(0, 0, 0, 0.5) !important;
   color: white;
   border-radius: 40px;
-  padding: 2vw;
+  padding: 3vw;
   width: 30vw;
   height: 65%;
   border: white 2px solid;
