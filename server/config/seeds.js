@@ -144,7 +144,7 @@ db.once('open', async () => {
     password: 'password12345',
     orders: [
       {
-        products: [products[0]._id, products[0]._id, products[1]._id]
+        products: [products[0]._id, products[5]._id, products[1]._id]
       }
     ]
   });
@@ -153,7 +153,12 @@ db.once('open', async () => {
     firstName: 'User',
     lastName: 'Two',
     email: 'two@test.com',
-    password: 'password12345'
+    password: 'password12345',
+    orders: [
+      {
+        products: [products[3]._id, products[8]._id, products[9]._id]
+      }
+    ]
   });
 
   console.log('users seeded');
