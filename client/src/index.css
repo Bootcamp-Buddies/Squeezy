@@ -360,12 +360,12 @@ text {
 
 .container-products {
   padding: 3vw !important;
-  background-image: linear-gradient(white, #e0f79d);
+  background-image: linear-gradient(#f2fcd4, #e0f79d);
 }
 
 .transition {
   height: 20px;
-  background-image: linear-gradient(#e0f79d, white);
+  background-image: linear-gradient(#e0f79d, #f2fcd4);
 }
 
 .form-container {
