@@ -55,6 +55,9 @@ button:disabled:hover {
   transition: .5s;
 }
 
+p {
+  color: white !important;
+}
 .overlay-container {
   position: absolute;
   opacity: 0;

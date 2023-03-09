@@ -61,6 +61,7 @@ npm run build
  - [@reduxjs/toolkit](https://www.npmjs.com/package/@reduxjs/toolkit)
  - [react-bootstrap](https://www.npmjs.com/package/react-bootstrap)
  - [bootstrap](https://www.npmjs.com/package/bootstrap)
+ - [react-password-strength-bar](https://www.npmjs.com/package/react-password-strength-bar)
  - [Readme.co](https://readme.so/editor)
 
 ## Authors

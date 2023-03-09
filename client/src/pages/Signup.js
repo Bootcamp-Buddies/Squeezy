@@ -4,10 +4,12 @@ import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 import Nav from '../components/Nav/index2.js';
+import PasswordStrengthBar from 'react-password-strength-bar';
 
 import backgroundBlank from "../assets/squeezy-background-blank-opt.jpg";
 
 function Signup(props) {
+  const [inputValue, setInputValue] = useState('');
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [addUser] = useMutation(ADD_USER);
 
@@ -34,6 +36,7 @@ function Signup(props) {
       [name]: value,
 
     });
+    setInputValue(event.target.value);
   };
 
   return (
@@ -103,6 +106,14 @@ function Signup(props) {
                 id="pwd"
                 onChange={handleChange}
               />
+              <div style={{ 'marginTop': '.5vh', 'width': '100%' }}><PasswordStrengthBar
+                password={inputValue} 
+                minLength={8}
+                onChangeScore={(score, feedback) => {
+                console.log(score, feedback);
+                }}
+                />
+                </div>
             </div>
             <div className="submit-button">
               <button type="submit">Submit</button>
