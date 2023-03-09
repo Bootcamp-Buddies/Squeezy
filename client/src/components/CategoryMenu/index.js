@@ -40,7 +40,10 @@ function CategoryMenu() {
 
   return (
     <div className='category-div'>
-      <h2>Choose a Category:</h2>
+      <h2 style={{
+        paddingTop: "20px",
+        paddingBottom: "20px",
+      }}>Choose a Category:</h2>
       {categories.map((item) => (
         <button
           key={item._id}
