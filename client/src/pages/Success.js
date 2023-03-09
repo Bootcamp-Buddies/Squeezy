@@ -3,6 +3,8 @@ import { useMutation } from '@apollo/client';
 import Jumbotron from '../components/Jumbotron';
 import { ADD_ORDER } from '../utils/mutations';
 import { idbPromise } from '../utils/helpers';
+import { Link } from 'react-router-dom';
+import backgroundBlank from "../assets/squeezy-background-blank-opt.jpg";
 
 function Success() {
   const [addOrder] = useMutation(ADD_ORDER);
@@ -31,11 +33,26 @@ function Success() {
 
   return (
     <div>
+      <div style={{
+        backgroundImage: `url(${backgroundBlank})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        position: '',
+        height: '130vh'
+      }}>
+        <Link className="navbar-brand" to="/">
+          <img
+            className="success-logo"
+            src="./icons/squeezy-logo-black-upright.png"
+            alt="Squeezy"
+          />
+        </Link>
       <Jumbotron>
-        <h1>Success!</h1>
-        <h2>Thank you for your purchase!</h2>
-        <h2>You will now be redirected to the home page</h2>
+        <h1 style={{'color': 'white', 'marginTop': '20vh' }}>Success!</h1>
+        <h2 style={{'color': 'white' }}>Thank you for your purchase!</h2>
+        <h2 style={{'color': 'white' }}>You will now be redirected to the home page</h2>
       </Jumbotron>
+      </div>
     </div>
   );
 }

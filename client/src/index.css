@@ -432,6 +432,20 @@ input {
   transition: .5s;
 }
 
+.success-logo {
+  position: absolute;
+  top: 3vw;
+  left: 42.5vw;
+  width: 13%;
+  height: 19%;
+  transition: .5s;
+}
+
+.success-logo:hover {
+  transform: scale(1.05);
+  transition: .5s;
+}
+
 .submit-button {
   text-align: center;
 }
