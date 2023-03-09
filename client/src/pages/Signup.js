@@ -39,6 +39,16 @@ function Signup(props) {
     setInputValue(event.target.value);
   };
 
+    const handleChangePwd = (event) => {
+    const { name, value } = event.target;
+    setFormState({
+      ...formState,
+      [name]: value,
+
+    });
+    setInputValue(event.target.value);
+  };
+
   return (
 
     <div className="container">
@@ -104,7 +114,7 @@ function Signup(props) {
                 name="password"
                 type="password"
                 id="pwd"
-                onChange={handleChange}
+                onChange={handleChangePwd}
               />
               <div className='password-check' style={{'marginTop': '.5vh', 'width': '100%' }}><PasswordStrengthBar
                 password={inputValue} 
