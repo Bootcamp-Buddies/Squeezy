@@ -36,7 +36,6 @@ function Signup(props) {
       [name]: value,
 
     });
-    setInputValue(event.target.value);
   };
 
     const handleChangePwd = (event) => {
